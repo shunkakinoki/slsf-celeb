@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='pytorch-serverless',
-    version='0.0.1',
+    version='1.0.0',
     description='PyTorch Serverless production API (w/ AWS Lambda)',
     url='https://github.com/alecrubin/pytorch-serverless',
     author='Alec Rubin',

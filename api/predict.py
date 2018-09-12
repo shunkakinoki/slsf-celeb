@@ -45,7 +45,7 @@ def build_pred(label_idx, log, prob):
 def parse_params(params):
 	image_url = urllib.parse.unquote_plus(params.get('image_url', ''))
 	n_labels = len(SetupModel.labels)
-	top_k = int(params.get('top_k', 3))
+	top_k = int(params.get('top_k', 5))
 	if top_k < 1: top_k = n_labels
 	return dict(image_url=image_url, top_k=min(top_k, n_labels))
 
