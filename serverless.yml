@@ -25,14 +25,14 @@ provider:
   # you can define service wide environment variables here
   environment:
     BUCKET_NAME: pytorch-serverless-shun
-    STATE_DICT_NAME: short_celeb_224.h5
+    STATE_DICT_NAME: first_224.h5
     IMAGE_SIZE: 224
     IMAGE_STATS: ([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     LABELS_PATH: lib/labels.txt
 
   # you can define custom configuration variables here
   variables:
-    api_version: v1.0.0
+    api_version: v2.0.0
 
   # you can add statements to the Lambda function's IAM Role here
   iamRoleStatements:
